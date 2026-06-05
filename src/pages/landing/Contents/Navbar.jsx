@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TindogLogo } from "../../../assets";
+import useClickOutside from "../../../hooks/useClickOutside";
 
 const links = [
   { label: "Features", href: "#cta" },
@@ -11,6 +12,9 @@ const links = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navRef = useRef(null);
+
+  useClickOutside(navRef, () => setOpen(false));
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -20,6 +24,7 @@ const Navbar = () => {
 
   return (
     <nav
+      ref={navRef}
       className={`z-50 flex items-center justify-between transition-all duration-300 ${
         scrolled
           ? "fixed top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl px-6 py-3 bg-white rounded-full shadow-lg text-[#FF6254]"

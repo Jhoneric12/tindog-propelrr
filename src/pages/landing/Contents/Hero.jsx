@@ -66,14 +66,14 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="px-6 md:px-16 mt-14 lg:px-30 pb-36 pt-6 flex flex-col-reverse md:flex-row items-center justify-between gap-14"
+      className="px-6 md:px-16 mt-14 lg:px-30 pb-36 pt-6 flex flex-col-reverse xl:flex-row items-center justify-between gap-14"
     >
       {/* Text content */}
       <motion.div
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-lg text-white"
+        className="max-w-lg text-white text-center md:text-left w-full"
       >
         <p
           className="text-white text-3xl mb-2 font-medium tracking-wide"
@@ -81,7 +81,7 @@ const Hero = () => {
         >
           Don&apos;t make your dog lonely.
         </p>
-        <h1 className="text-4xl md:text-5xl font-semibold leading-18 mb-5">Get your dog a partner in life</h1>
+        <h1 className="text-4xl md:text-5xl font-semibold leading-14 mb-5">Get your dog a partner in life</h1>
         <p className="text-white/80 mb-7 text-sm md:text-base leading-relaxed">
           Tindog assists dog owners whose pets are lonely. Tindog also collaborated with veterinarians and a dog
           adoption project. Be a part of this change
@@ -92,7 +92,7 @@ const Hero = () => {
         >
           Download the app now
         </p>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4 justify-center md:justify-start">
           <AppBadge store="google" />
           <AppBadge store="apple" />
         </div>
@@ -105,18 +105,7 @@ const Hero = () => {
         transition={{ duration: 0.7, delay: 0.1 }}
         className="shrink-0 relative"
       >
-        {/* Annotation: 100+ breeders */}
-        <p className="absolute -top-6 left-4 text-white text-xl" style={{ fontFamily: "'Nanum Pen Script', cursive" }}>
-          100+ breeders
-        </p>
-        {/* Annotation: 1,000 dogs adopted */}
-        <p
-          className="absolute bottom-10 -right-4 text-white text-xl rotate-[15deg] origin-bottom-right"
-          style={{ fontFamily: "'Nanum Pen Script', cursive" }}
-        >
-          1,000 dogs adopted
-        </p>
-        <img src={HeroImg} alt="Tindog app hero" className="w-[420px] md:w-[520px] max-w-none" />
+        <img src={HeroImg} alt="Tindog app hero" className="w-full max-w-[320px] sm:max-w-[400px] md:max-w-[520px]" />
       </motion.div>
     </section>
   );
