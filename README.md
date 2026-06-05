@@ -1,12 +1,35 @@
-# React + Vite
+# Tindog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Note:** This project was built using my own personal React starter pack. The repository contains boilerplate files and folders unrelated to this project — the actual Tindog code lives in `src/pages/landing/`.
 
-Currently, two official plugins are available:
+A landing page for **Tindog**. Built with React + Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+### Install dependencies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm i
+```
+
+> If you run into peer dependency conflicts, use:
+>
+> ```bash
+> npm i --legacy-peer-deps
+> ```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+## Project Structure
+
+The actual project code lives in:
+
+```
+src/pages/landing/
+```
+
+> Note: This project was scaffolded from a starter pack, so there may be unrelated files and folders outside of the `landing` directory.
