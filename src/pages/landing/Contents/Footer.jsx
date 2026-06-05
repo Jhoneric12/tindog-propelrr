@@ -140,14 +140,14 @@ const Footer = () => {
             >
               Download the app now
             </p>
-            {/* <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3">
               <a href="#" className="hover:opacity-80 transition-opacity">
                 <img src={PlayStore} alt="Google Play" className="h-12 object-contain" />
               </a>
               <a href="#" className="hover:opacity-80 transition-opacity">
                 <img src={AppStore} alt="App Store" className="h-12 object-contain" />
               </a>
-            </div> */}
+            </div>
           </div>
         </motion.div>
 

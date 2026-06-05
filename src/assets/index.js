@@ -1,6 +1,6 @@
 import TindogLogo from "./tindog-logo.svg";
-import PlayStore from "./PlayStore.png";
-import AppStore from "./AppStore.png";
+import PlayStore from "./Google Play.png";
+import AppStore from "./App Store.png";
 import HeroImg from "./hero-img.svg";
 import Partner1 from "./animal-industry.png";
 import Partner2 from "./animalhouse-removebg-preview.png";

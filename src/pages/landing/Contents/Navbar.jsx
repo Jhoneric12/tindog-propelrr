@@ -38,7 +38,7 @@ const Navbar = () => {
           <a
             key={l.label}
             href={l.href}
-            className={`font-medium transition-colors text-sm ${scrolled ? "text-[#FF6254]" : "text-white"}`}
+            className={`font-medium text-sm ${scrolled ? "text-[#FF6254]" : "text-white"}`}
           >
             {l.label}
           </a>
@@ -47,8 +47,8 @@ const Navbar = () => {
           <button
             className={`text-sm font-medium px-5 py-2 rounded-[200px] transition-all ${
               scrolled
-                ? "bg-[#FF6254] text-white border border-[#FF6254] hover:bg-[#e0533d]"
-                : "bg-white text-[#FF6254] border border-white hover:bg-gray-100"
+                ? "bg-[#FF6254] text-white border border-[#FF6254]"
+                : "bg-white text-[#FF6254] border border-white"
             }`}
           >
             Get the app
@@ -71,17 +71,14 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="absolute top-full left-0 right-0 bg-[#ff7043] flex flex-col items-center gap-5 py-8 shadow-lg"
+            className="absolute top-full left-0 right-0 bg-[#ff7043] flex flex-col items-center gap-5 py-8 shadow-lg text-white"
           >
             {links.map((l) => (
               <a key={l.label} href={l.href} className="text-white font-medium" onClick={() => setOpen(false)}>
                 {l.label}
               </a>
             ))}
-            <a
-              href="#"
-              className="border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-[#ff7043] transition-all"
-            >
+            <a href="#" className="border border-white text-white px-6 py-2 rounded-full">
               Get Started
             </a>
           </motion.div>

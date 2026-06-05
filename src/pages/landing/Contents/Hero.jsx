@@ -92,10 +92,10 @@ const Hero = () => {
         >
           Download the app now
         </p>
-        {/* <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4">
           <AppBadge store="google" />
           <AppBadge store="apple" />
-        </div> */}
+        </div>
       </motion.div>
 
       {/* Hero image */}
