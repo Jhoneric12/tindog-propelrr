@@ -17,7 +17,7 @@ const Navbar = () => {
   useClickOutside(navRef, () => setOpen(false));
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    const onScroll = () => setScrolled(window.scrollY > 300);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -33,7 +33,16 @@ const Navbar = () => {
     >
       {/* Logo */}
       <a href="/" className="text-2xl font-bold tracking-wide flex items-center gap-4">
-        <img src={TindogLogo} alt="Tindog Logo" />
+        <img
+          src={TindogLogo}
+          alt="Tindog Logo"
+          className="transition-all duration-300"
+          style={
+            scrolled
+              ? { filter: "invert(42%) sepia(93%) saturate(600%) hue-rotate(330deg) brightness(100%) contrast(95%)" }
+              : {}
+          }
+        />
         <span className={scrolled ? "text-[#FF6254]" : "text-white"}>Tindog</span>
       </a>
 

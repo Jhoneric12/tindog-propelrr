@@ -5,7 +5,7 @@ import { FooterImage } from "../../../assets";
 const CTA = () => {
   return (
     <section id="cta" className="bg-white overflow-visible relative">
-      <div className="px-6   md:px-16 lg:px-28 pt-16 flex flex-col lg:flex-row items-center md:items-center justify-between gap-12 max-w-7xl mx-auto">
+      <div className="px-6 md:px-16 lg:px-28 pt-16 flex flex-col xl:flex-row items-center md:items-center justify-between gap-12 max-w-7xl mx-auto">
         {/* Text */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -31,15 +31,12 @@ const CTA = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="relative flex items-end justify-center shrink-0 w-full max-w-[480px] md:w-[580px] mt-10 md:mt-0"
+          className="relative flex items-end justify-center shrink-0 w-full md:w-[580px] mt-10 md:mt-0"
         >
-          {/* Purple circle */}
-          <div className="absolute bottom-0 right-8 w-72 h-72 md:w-[380px] md:h-[380px] rounded-full bg-[#7c5cbf]" />
-          {/* Dog image — large, overflows bottom into footer */}
           <img
             src={FooterImage}
             alt="Dog"
-            className="relative z-10 w-full max-w-[520px] object-contain object-bottom block"
+            className="relative z-10 w-full max-w-[720px] object-contain object-bottom block"
           />
         </motion.div>
       </div>

@@ -123,11 +123,11 @@ const Testimonials = () => {
             {visible.map((t) => (
               <div
                 key={t.id}
-                className="relative bg-white rounded-2xl border border-gray-200 pt-14 pb-7 px-7 flex flex-col items-center text-center shadow-sm"
+                className="relative bg-white rounded-2xl border border-black pt-14 pb-7 px-7 flex flex-col items-center text-center shadow-sm"
                 style={{ borderBottomColor: "#ff7043", borderBottomWidth: 3 }}
               >
                 {/* Avatar */}
-                <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow-md">
+                <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-20  rounded-full overflow-hidden ">
                   <img src={Frame1} alt={t.name} className="w-full h-full object-contain" />
                 </div>
 

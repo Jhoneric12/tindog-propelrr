@@ -9,27 +9,22 @@ import Footer from "./Contents/Footer";
 const Landing = () => {
   return (
     <main className="overflow-x-hidden">
-      {/* Hero — orange section wraps nav + hero content */}
-      <div className="bg-gradient-to-r from-[#f4956a] to-[#f04f5e] relative">
+      <div className="bg-gradient-to-r from-[#f4956a] to-[#f04f5e] relative pb-52 md:pb-60">
         <Navbar />
         <Hero />
         {/* Curved bottom edge */}
-        <div className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none">
-          <svg
-            viewBox="0 0 1440 80"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            className="w-full h-16 md:h-20 block"
-          >
-            <path d="M0,80 C360,0 1080,0 1440,80 L1440,80 L0,80 Z" fill="white" />
-          </svg>
-          {/* Find out more — sits on the curve */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 flex flex-col items-center gap-1">
-            <p className="text-gray-500 text-2xl" style={{ fontFamily: "'Nanum Pen Script', cursive" }}>
+        <div
+          className="absolute bottom-0 left-[-5%] w-[110%] h-52 md:h-60 bg-white"
+          style={{ borderRadius: "50% 50% 0 0 / 100% 100% 0 0" }}
+        />
+
+        <div className="absolute bottom-26 md:bottom-40 left-1/2 -translate-x-1/2 flex flex-col items-center gap-0 z-10">
+          <a href="#testimonials" className="flex flex-col items-center gap-0">
+            <span className="text-3xl" style={{ fontFamily: "'Nanum Pen Script', cursive" }}>
               Find out more
-            </p>
-            <span className="text-gray-400 text-sm leading-none">&#8964;</span>
-          </div>
+            </span>
+            <span className="text-3xl leading-none -mt-2 block animate-bounce">&#8964;</span>
+          </a>
         </div>
       </div>
 

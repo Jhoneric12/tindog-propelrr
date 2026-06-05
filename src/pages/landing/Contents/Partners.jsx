@@ -27,8 +27,8 @@ const PartnerLogo = ({ partner, delay }) => (
 
 const Partners = () => {
   return (
-    <section className="pt-16 pb-14 px-6 md:px-16 bg-white text-center">
-      <div className="flex flex-wrap items-center justify-center gap-12">
+    <section className="-mt-20 pb-14 px-6 md:px-16 bg-white text-center">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-12">
         {partners.map((p, i) => (
           <PartnerLogo key={p.name} partner={p} delay={i * 0.1} />
         ))}
