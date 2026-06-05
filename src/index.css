@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Pen+Script&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  font-family: "Poppins", sans-serif;
+  /* font-synthesis: none; */
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@theme {
+  /* Brand Color */
+  --color-primary-color: #333333;
+  --color-secondary-color: #027a8a;
+  --color-tindog-orange: #ff7043;
+
+  /* Font Color */
+  --color-text-color: #4f4f4f;
+  --color-secondaryText-color: #828282;
+
+  --color-bgBase-color: #fffffe;
+  --color-cardBg-color: #fdfdfd;
+
+  /* Border Color */
+  --color-border-color: #e0e0e0;
+
+  /* State Color */
+  --color-info-color: #2f80ed;
+  --color-success-color: #27ae60;
+  --color-warning-color: #e2b93b;
+  --color-error-color: #eb5757;
+}
+
+/* ANT DESIGN */
+.ant-menu-submenu-selected > .ant-menu-submenu-title {
+  color: 828282 !important; /* Your active color */
+  font-weight: 600;
+  background-color: #eeeff5; /* Optional background */
+  padding: 0 1rem;
+}
+
+/* === Scrollbar Visible on Hover === */
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: "#333333" transparent;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.custom-scroll:not(:hover) {
+  scrollbar-color: transparent transparent;
+}
+
+.custom-scroll:not(:hover)::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* REACT BIG CALENDAR */
+
+.rbc-agenda-view {
+  background-color: #f9f9f9; /* Replace with your desired background */
+}
+
+/* Custom Button Styles */
+.custom-gray-button {
+  background-color: #e5e7eb;
+  color: #374151;
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.ant-btn.custom-gray-button:hover {
+  background-color: #333333 !important;
+  color: #fff !important;
+}
