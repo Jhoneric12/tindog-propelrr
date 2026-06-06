@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="px-6 md:px-16  lg:px-30 pb-8 pt-6 flex flex-col-reverse xl:flex-row items-center justify-between gap-14"
+      className="px-6 md:px-16 lg:px-30 xl:px-40 pb-8 pt-6 flex flex-col-reverse xl:flex-row items-center justify-between gap-14"
     >
       {/* Text content */}
       <motion.div
