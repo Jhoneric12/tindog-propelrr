@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TindogLogo } from "../../../assets";
 import useClickOutside from "../../../hooks/useClickOutside";
+import NavLogo from "../../../components/ui/logo/NavLogo";
 
 const links = [
   { label: "Features", href: "#cta" },
@@ -32,19 +33,7 @@ const Navbar = () => {
       }`}
     >
       {/* Logo */}
-      <a href="/" className="text-2xl font-bold tracking-wide flex items-center gap-4">
-        <img
-          src={TindogLogo}
-          alt="Tindog Logo"
-          className="transition-all duration-300"
-          style={
-            scrolled
-              ? { filter: "invert(42%) sepia(93%) saturate(600%) hue-rotate(330deg) brightness(100%) contrast(95%)" }
-              : {}
-          }
-        />
-        <span className={scrolled ? "text-[#FF6254]" : "text-white"}>Tindog</span>
-      </a>
+      <NavLogo isScrolled={scrolled} />
 
       {/* Desktop links */}
       <div className="hidden md:flex items-center gap-14">

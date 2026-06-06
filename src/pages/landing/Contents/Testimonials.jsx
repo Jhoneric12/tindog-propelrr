@@ -89,7 +89,7 @@ const Testimonials = () => {
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="text-center text-[#ff7043] text-2xl mb-2"
+        className="text-center text-[#ff7043] text-3xl mb-2"
         style={{ fontFamily: "'Nanum Pen Script', cursive" }}
       >
         Superb testimonials

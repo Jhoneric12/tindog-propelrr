@@ -4,8 +4,8 @@ import { FooterImage } from "../../../assets";
 
 const CTA = () => {
   return (
-    <section id="cta" className="bg-white overflow-visible relative">
-      <div className="px-6 md:px-16 lg:px-28 pt-16 flex flex-col xl:flex-row items-center md:items-center justify-between gap-12 max-w-7xl mx-auto">
+    <section id="cta" className="bg-white overflow-visible relative z-40 pb-0">
+      <div className="px-6 md:px-16 lg:px-28 pt-16 flex flex-col xl:flex-row items-center md:items-center justify-between gap-20 max-w-7xl mx-auto">
         {/* Text */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -25,13 +25,13 @@ const CTA = () => {
           </a>
         </motion.div>
 
-        {/* Dog image with purple circle + annotation */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="relative flex items-end justify-center shrink-0 w-full md:w-[580px] mt-10 md:mt-0"
+          className="relative z-10 flex items-end justify-center self-end shrink-0 w-full md:w-[600px] lg:w-[800px] xl:w-[600px] mt-6 xl:mt-0 -mb-8 xl:-mb-10"
+          // className="relative flex items-end justify-center shrink-0 w-full md:w-[580px] mt-10 md:mt-0"
         >
           <img
             src={FooterImage}

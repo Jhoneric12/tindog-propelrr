@@ -1,16 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { AppStore, HeroImg, PlayStore, TindogLogo } from "../../../assets";
-
-const AppBadge = ({ store }) => (
-  <a href="#" className="hover:opacity-80 transition-opacity">
-    <img
-      src={store === "apple" ? AppStore : PlayStore}
-      alt={store === "apple" ? "App Store" : "Google Play"}
-      className="h-12"
-    />
-  </a>
-);
+import { HeroImg, TindogLogo } from "../../../assets";
+import AppBadge from "../../../components/ui/badge/AppBadge";
 
 const Hero = () => {
   return (

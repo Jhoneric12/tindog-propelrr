@@ -12,10 +12,15 @@ const Landing = () => {
       <div className="bg-gradient-to-r from-[#f4956a] to-[#f04f5e] relative pb-52 md:pb-60">
         <Navbar />
         <Hero />
-        {/* Curved bottom edge */}
+
+        {/* Curved bottom edge  */}
         <div
-          className="absolute bottom-0 left-[-5%] w-[110%] h-52 md:h-60 bg-white"
-          style={{ borderRadius: "50% 50% 0 0 / 100% 100% 0 0" }}
+          className="absolute bottom-[-1px] left-[-5%] w-[110%] h-52 md:h-60 bg-white"
+          style={{
+            borderRadius: "50% 50% 0 0 / 100% 100% 0 0",
+            WebkitBackfaceVisibility: "hidden",
+            backfaceVisibility: "hidden",
+          }}
         />
 
         <div className="absolute bottom-26 md:bottom-40 left-1/2 -translate-x-1/2 flex flex-col items-center gap-0 z-10">
